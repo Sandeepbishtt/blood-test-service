@@ -55,3 +55,29 @@ setInterval(autoPlay, 4000); // Change slide every 4 seconds
 
 // Initial setup: display the first slide
 showSlide(activeIndex);
+
+const track = document.querySelector(".radiology-track");
+const items = track.querySelectorAll(".radiology-item");
+let currentIndex = 0;
+
+function updateCarousel() {
+  items.forEach((item, index) => {
+    item.classList.remove("active");
+  });
+
+  const itemWidth = items[0].offsetWidth + +100; // width + gap
+  const centerOffset = track.offsetWidth / 2 - itemWidth / 2;
+  const scrollTo = itemWidth * currentIndex;
+
+  items[currentIndex].classList.add("active");
+  track.style.transform = `translateX(${centerOffset - scrollTo}px)`;
+
+  currentIndex = (currentIndex + 1) % items.length;
+}
+
+setInterval(updateCarousel, 3000);
+updateCarousel();
+
+
+
+
