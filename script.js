@@ -51,7 +51,7 @@ function autoPlay() {
 }
 
 // Start auto-play
-setInterval(autoPlay, 4000); // Change slide every 3 seconds
+setInterval(autoPlay, 4000); // Change slide every 4 seconds
 
 // Initial setup: display the first slide
 showSlide(activeIndex);
