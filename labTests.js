@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "Renal Profile",
         "Na K Cl",
         "CBC",
-        "HbA1c/FBS",
+        "HbA1c",
+        "FBS",
       ],
     },
     "profile-c": {
@@ -50,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Vitamin D3",
         "Iron Studies",
         "Calcium",
-        "Sr Electrolyte"
+        "Sr Electrolyte",
       ],
     },
     iron: {
