@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Set content
       document.getElementById("drawerTitle").textContent = test.title;
       document.getElementById("drawerPrice").textContent = test.price;
+
       document.getElementById(
         "drawerOriginal"
       ).textContent = `₹${test.original}`;
